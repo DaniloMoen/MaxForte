@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaxForte Suplementos</title>
+    <link rel="stylesheet" href="C:\Users\Pichau\Desktop\site_danilo\css\encomendas.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        .invisivel { display: none; }
+        .fadeOut { opacity: 0; transition: 0.5s; }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container-header">
+            <img src="../img/logo-maxfort.png" alt="Logo MaxForte" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contatos.html">Contato</a></li>
+                    <li><a href="encomendas.html">Encomendas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Título e filtro -->
+    <ul class="encomenda-titulo">
+        <li class="encomenda-item">Encomendas</li>
+        <label for="filtrar-tabela" style="color: white; font-family: 'Tahoma'; font-size: 20px; margin-left: 38px;">Buscar:</label>
+        <input type="text" id="filtrar-tabela" placeholder="Digite o cliente que deseja buscar" size="40">
+    </ul>
+
+    <!-- Tabela de encomendas -->
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Valor Unitário</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody class="tabela-cliente">
+            <tr class="cliente">
+                <td class="nome">Jorlan</td>
+                <td class="produto">Whey Protein</td>
+                <td class="qtde">5</td>
+                <td class="unitario">149,90</td>
+                <td class="total"></td>
+            </tr>
+            <tr class="cliente">
+                <td class="nome">Ganley</td>
+                <td class="produto">Creatina</td>
+                <td class="qtde">10</td>
+                <td class="unitario">89,90</td>
+                <td class="total"></td>
+            </tr>
+            <tr class="cliente">
+                <td class="nome">Ganley</td>
+                <td class="produto">Whey Protein</td>
+                <td class="qtde">5</td>
+                <td class="unitario">150</td>
+                <td class="total"></td>
+            </tr>
+            <tr class="cliente">
+                <td class="nome">Ceubolinha</td>
+                <td class="produto">Whey Protein</td>
+                <td class="qtde">2</td>
+                <td class="unitario">149,90</td>
+                <td class="total"></td>
+            </tr>
+            <tr class="cliente">
+                <td class="nome">Ramon</td>
+                <td class="produto">Pré treino</td>
+                <td class="qtde">2</td>
+                <td class="unitario">119,90</td>
+                <td class="total"></td>
+            </tr>
+            <tr class="cliente">
+                <td class="nome">Dudu Fit</td>
+                <td class="produto">Whey Protein</td>
+                <td class="qtde">5</td>
+                <td class="unitario">149,90</td>
+                <td class="total"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Formulário de Adicionar Encomenda -->
+    <main>
+        <ul class="contatos-titulos">
+            <h1 class="contatos-item" style="color: #000000; font-size: 25px; font-family: Tahoma; text-decoration: none;">
+                <i class="fa fa-boxes"> Adicionar Encomenda</i>
+            </h1>
+        </ul>
+
+        <div id="formRetorno" class="divRetorno">
+            <p id="textoRetorno" class="texto-contatos"></p>
+        </div>
+
+        <div id="formulario">
+            <form id="form-adiciona">
+                <fieldset>
+                    <label>Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" class="input-padrao">
+
+                    <label>Quantidade:</label>
+                    <input type="number" id="qtde" name="qtde" class="input-padrao">
+
+                    <label>Produto:</label>
+                    <select id="produto" name="produto">
+                        <option>Selecione</option>
+                        <option>Whey Protein</option>
+                        <option>Pré treino</option>
+                        <option>BCAA</option>
+                        <option>Creatina</option>
+                    </select>
+
+                    <label>Valor Unitário:</label>
+                    <input type="number" id="unitario" name="unitario" class="input-padrao">
+
+                </fieldset>
+
+                <input type="submit" id="adicionar-encomenda" value="Enviar Formulário" class="enviar">
+                <button type="button" id="api-encomenda">Carregar API</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <img src="../img/logo-maxfort.png" alt="Logo MaxForte" class="logo-footer">
+            <p>&copy; 2025 MaxForte Suplementos - Todos os direitos reservados</p>
+            <div class="redes-sociais">
+                <a href="#"><i class="fa fa-whatsapp"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="C:\Users\Pichau\Desktop\site_danilo\js\total.js"></script>
+    <script src="C:\Users\Pichau\Desktop\site_danilo\js\adicionar.js"></script>
+    <script src="C:\Users\Pichau\Desktop\site_danilo\js\busca.js"></script>
+    <script src="C:\Users\Pichau\Desktop\site_danilo\js\remove.js"></script>
+    <script src="C:\Users\Pichau\Desktop\site_danilo\js\api_encomenda.js"></script>
+</body>
+</html>

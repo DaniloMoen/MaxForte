@@ -1,0 +1,18 @@
+{
+    "encomendas_web":[
+        {
+            "nome": "Bruce",
+            "produto": "Tapete Souly",
+            "qtde": 2,
+            "unitario": 25,
+            "total": 0 
+        },
+        {
+            "nome": "Manuela",
+            "produto": "Disco de Vinil",
+            "qtde": 1,
+            "unitario": 75,
+            "total": 0 
+        }
+    ]
+}

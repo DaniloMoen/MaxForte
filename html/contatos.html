@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - MaxForte Suplementos</title>
+    <link rel="stylesheet" href="C:\Users\Pichau\Desktop\site_danilo\css\contatos.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container-header">
+            <img src="../img/logo-maxfort.png" alt="Logo MaxForte" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contatos.html" class="active">Contato</a></li>
+                    <li><a href="encomendas.html">Encomendas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- FORMULÁRIO DE CONTATO -->
+    <main class="contato-page">
+        <h1>Fale Conosco</h1>
+        <p>Preencha o formulário abaixo e entraremos em contato o mais rápido possível.</p>
+
+        <form id="formContato">
+            <fieldset>
+                <legend>Formulário de Contato</legend>
+
+                <!-- Nome -->
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome completo">
+
+                <!-- E-mail -->
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="exemplo@email.com">
+
+                <!-- Telefone -->
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(xx) xxxxx-xxxx">
+
+                <!-- Tipo de Suplemento -->
+                <label for="suplemento">Suplemento de Interesse:</label>
+                <select id="suplemento" name="suplemento">
+                    <option value="">Selecione...</option>
+                    <option value="whey">Whey Protein</option>
+                    <option value="creatina">Creatina</option>
+                    <option value="bcaa">BCAA</option>
+                    <option value="pretreino">Pré-Treino</option>
+                    <option value="vitaminas">Vitaminas</option>
+                </select>
+
+                <!-- Mensagem -->
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem..."></textarea>
+
+                <!-- Botão -->
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
+
+        <!-- Mensagem de retorno -->
+        <div id="mensagemRetorno" style="display:none; margin-top:20px; font-weight:bold; color:green;">
+            Obrigado pelo contato! Retornaremos em breve.
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <img src="../img/logo-maxfort.png" alt="Logo MaxForte" class="logo-footer">
+            <p>&copy; 2025 MaxForte Suplementos - Todos os direitos reservados</p>
+            <div class="redes-sociais">
+                <a href="#"><i class="fa fa-whatsapp"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="C:\Users\Pichau\Desktop\site_danilo\js\dorm.js"></script>
+</body>
+</html>
